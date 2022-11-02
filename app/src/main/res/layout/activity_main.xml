@@ -7,21 +7,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/host_button"
-        android:layout_width="166dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="8dp"
-        android:text="Host"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/join_button" />
-
-    <Button
         android:id="@+id/join_button"
         android:layout_width="166dp"
         android:layout_height="55dp"
         android:text="Join"
+        android:backgroundTint="@color/join_button_background_color"
+        android:textColor="@color/join_button_text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,6 +20,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/host_button"
+        android:layout_width="166dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Host"
+        android:backgroundTint="@color/host_button_background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_button" />
+
+    <ImageButton
         android:id="@+id/host_config_button"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -37,5 +40,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/host_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/host_button" />
+        app:layout_constraintStart_toEndOf="@+id/host_button"
+        app:layout_constraintTop_toTopOf="@+id/host_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
